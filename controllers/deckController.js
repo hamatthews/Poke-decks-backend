@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 
 const getAllDecks = async (req, res) => {
     try {
+        res.setHeader("Access-Control-Allow-Credentials", "true");
         const decks = await Deck.find();
         res.status(200).json(decks);    
     }
