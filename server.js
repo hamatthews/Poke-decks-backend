@@ -98,5 +98,5 @@ app.use((req, res, next) => {
 })
 
 // routes
-app.use('https://poke-decks-backend.onrender.com/api/decks', deckRoutes);
+app.use('/api/decks', deckRoutes);
 
